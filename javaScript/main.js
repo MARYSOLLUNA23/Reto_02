@@ -55,14 +55,17 @@ document.addEventListener ('keydown', (e) =>{//z
 });
 
 function pianoRosa(){
-  const colorRosa= document.querySelectorAll(' .key.white');
-console.log(colorRosa)
+const colorRosa= document.querySelectorAll(' .key.white');
 colorRosa.forEach(cambiarRosa);
 
 function cambiarRosa(element){
   element.style.backgroundColor='pink';
 }
 }
+const botonRosa =  document.querySelector('#personalizarRosa');
+botonRosa.addEventListener('click', pianoRosa);
+
+
 function pianoAzul(){
 const colorAzul= document.querySelectorAll(' .key.white');
 colorAzul.forEach(cambiarAzul);
@@ -71,6 +74,9 @@ function cambiarAzul(element){
   element.style.backgroundColor='rgb(41, 235, 218)';
 }
 }
+const botonAzul =  document.querySelector('#personalizarAzul');
+botonAzul.addEventListener('click', pianoAzul);
+
 function pianoAmarillo(){
 const colorAmarillo= document.querySelectorAll(' .key.white');
 colorAmarillo.forEach(cambiarAmarillo);
@@ -79,6 +85,9 @@ function cambiarAmarillo(element){
 element.style.backgroundColor="yellow";
 }
 }
+const botonAmarillo =  document.querySelector('#personalizarAmarillo');
+botonAmarillo.addEventListener('click', pianoAmarillo);
+
 function pianoBlanco(){
   const colorBlanco= document.querySelectorAll(' .key.white');
 colorBlanco.forEach(cambiarBlanco);
@@ -87,4 +96,6 @@ function cambiarBlanco(element){
   element.style.backgroundColor="white";
 }
 }
+const botonBlanco =  document.querySelector('#personalizarBlanco');
+botonBlanco.addEventListener('click', pianoBlanco);
 
